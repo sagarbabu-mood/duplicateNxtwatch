@@ -1,0 +1,27 @@
+.filenot-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.head1-filenot {
+  color: #486aae;
+  background: -webkit-linear-gradient(#486aae, #b30086);
+  font-family: Ubuntu, sans-serif;
+  font-size: 100px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.para-filenot {
+  color: #333333;
+  font-size: 25px;
+  margin: 10px;
+  margin-bottom: 40px;
+}
+.head2-filenot {
+  color: #333333;
+  margin-top: 0px;
+  font-family: Ubuntu, sans-serif;
+  font-size: 30px;
+}
