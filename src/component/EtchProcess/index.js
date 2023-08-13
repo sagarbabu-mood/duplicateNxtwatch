@@ -62,7 +62,7 @@ const WeEtch = () => (
             </div>
           </div>
 
-          <div class="vl1-inox"></div>
+          <div class="vl1-inox2"></div>
           <div className="cont-line-spoler">
             <h1 className="head1-form2">Process</h1>
 
@@ -114,7 +114,7 @@ const WeEtch = () => (
             </div>
           </div>
 
-          <div class="vl2-inox"></div>
+          <div class="vl2-inox2"></div>
         </div>
         <div className="textarea-cont">
           <h1 className="head1-form2">Remarks</h1>
@@ -149,7 +149,7 @@ const WeEtch = () => (
               <input type="text" className="input1" />
             </div>
           </div>
-          <div class="vl1-inox1"></div>
+          <div class="vl1-inox11"></div>
           <div className="cont-line-spoler">
             <h1 className="head1-form2">Process</h1>
 
@@ -201,7 +201,7 @@ const WeEtch = () => (
             </div>
           </div>
         </div>
-        <div class="vl2-inox1"></div>
+        <div class="vl2-inox11"></div>
         <div className="textarea-cont">
           <h1 className="head1-form2">Remarks</h1>
           <textarea rows="4" cols="50" className="input1"></textarea>

@@ -1,18 +1,18 @@
-.head1-form1-we {
+.head1-form1-lco {
   color: #486aae;
   font-family: Ubuntu, sans-serif;
   font-size: 25px;
   margin-left: 10px;
 }
-.cont1-form1-we {
+.cont1-form1-lco {
   padding: 20px;
 }
-.label1-we {
+.label1-lco {
   color: #333333;
   font-size: 20px;
   margin: 10px;
 }
-.input1-we {
+.input1-lco {
   border-radius: 10px;
   padding: 12px;
   border: 2px solid #486aae;
@@ -24,7 +24,7 @@
   font-size: 17px;
   margin-right: 40px;
 }
-.input2-we {
+.input2-lco {
   border-radius: 10px;
   padding: 12px;
   border: 2px solid #486aae;
@@ -35,17 +35,16 @@
   color: #595959;
   font-size: 17px;
 }
-.cont2-form1-we {
+.cont2-form1-lco {
   display: flex;
   flex-direction: row;
 
   margin-top: 50px;
 }
-.cont2-inner-we {
+.cont2-inner-lco {
   margin-right: 150px;
-  margin-left: 60px;
 }
-.dropdown-form1-we {
+.dropdown-form1-lco {
   border-radius: 10px;
   padding: 12px;
   border: 2px solid #486aae;
@@ -57,21 +56,21 @@
   font-size: 17px;
   width: 245px;
 }
-.cont-shift-we {
+.cont-shift-lco {
   margin-top: 40px;
   display: flex;
   flex-direction: row;
 }
-.label2-we {
+.label2-lco {
   color: #333333;
   font-size: 20px;
   margin: 10px;
   margin-left: 75px;
 }
-.cont3-inner-we {
+.cont3-inner-lco {
   margin-right: 190px;
 }
-.cont-display-we {
+.cont-display-lco {
   border-radius: 10px;
 
   border: 2px solid #486aae;
@@ -88,49 +87,9 @@
   height: 70px;
   background-color: white;
 }
-
-.vl1-inox2 {
-  border-left: 6px solid;
-  border-image: linear-gradient(#486aae, #b30086) 30;
-  height: 400px;
-  position: absolute;
-  left: 45%;
-  margin-left: -3px;
-  margin-top: 690px;
-  top: 0;
+.head-ran {
 }
-.vl2-inox2 {
-  border-left: 6px solid;
-  border-image: linear-gradient(#486aae, #b30086) 30;
-  height: 400px;
-  position: absolute;
-  left: 45%;
-  margin-left: -3px;
-  margin-top: 1200px;
-  top: 0;
-}
-.vl1-inox11 {
-  border-left: 6px solid;
-  border-image: linear-gradient(#486aae, #b30086) 30;
-  height: 400px;
-  position: absolute;
-  left: 45%;
-  margin-left: -3px;
-  margin-top: 1970px;
-  top: 0;
-}
-.vl2-inox11 {
-  border-left: 6px solid;
-  border-image: linear-gradient(#486aae, #b30086) 30;
-  height: 400px;
-  position: absolute;
-  left: 45%;
-  margin-left: -3px;
-  margin-top: 2480px;
-  top: 0;
-}
-
-.btn-we {
+.btn-lco {
   border-radius: 10px;
   padding: 12px;
   border: 2px solid #486aae;
@@ -143,43 +102,43 @@
   background-color: #486aae;
   font-family: ;
 }
-
 button:hover {
   background-color: #ffffff;
   color: white;
   color: #595959;
 }
-.line-we {
+.line-lco {
   border-top: 1px solid #e6e6e6;
   margin-top: 30px;
 }
-.batchcont2-form1-we {
+.batchcont2-form1-lco {
   display: flex;
   flex-direction: row;
+  margin-top: 50px;
 }
-.batchcont2-inner-we {
+.batchcont2-inner-lco {
   display: flex;
   flex-direction: row;
-  margin-left: 60px;
+  margin-left: 140px;
 }
-.batchcont2-inner2-we {
+.batchcont2-inner2-lco {
   display: flex;
   flex-direction: row;
-  margin-left: 210px;
+  margin-left: 185px;
 }
-.batchcont2-inner3-we {
+.batchcont2-inner3-lco {
   display: flex;
   flex-direction: row;
   margin-top: 20px;
 }
-.batchcont3-inner3-we {
+.batchcont3-inner3-lco {
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
-  margin-left: 30px;
+  margin-top: 70px;
+  margin-left: 50px;
   margin-top: 30px;
 }
-.batch-button-we {
+.batch-button-lco {
   border-radius: 10px;
   padding: 12px;
   border: 2px solid #486aae;
@@ -193,19 +152,29 @@ button:hover {
   font-family: ;
   width: 100px;
 }
-.batchbtn-cont-we {
+.batchbtn-cont-lco {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 30px;
 }
-.head1-form2-we {
-  color: #486aae;
-  font-family: Ubuntu, sans-serif;
-  font-size: 25px;
-  margin-left: 10px;
-  text-align: center;
+.vl1-lco {
+  border-left: 6px solid;
+  border-image: linear-gradient(#486aae, #b30086) 30;
+  height: 400px;
+  position: absolute;
+  left: 45%;
+  margin-left: -3px;
+  margin-top: 520px;
+  top: 0;
 }
-.after-etch-cont-we {
-  margin-left: 60px;
+.vl2-lco {
+  border-left: 6px solid;
+  border-image: linear-gradient(#486aae, #b30086) 30;
+  height: 400px;
+  position: absolute;
+  left: 45%;
+  margin-left: -3px;
+  margin-top: 1020px;
+  top: 0;
 }

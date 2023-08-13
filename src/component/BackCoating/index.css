@@ -120,6 +120,7 @@ button:hover {
   display: flex;
   flex-direction: row;
   margin-left: 120px;
+  height: fit-content;
 }
 .batchcont2-inner2-Back {
   display: flex;

@@ -3,6 +3,8 @@ import Lpdiffusion from "./component/Lpdiffusion";
 import Ldse from "./component/Ldse";
 import WeEtch from "./component/EtchProcess";
 import Annealing from "./component/Annealing";
+import Pecvd from "./component/Pecvd";
+import Lco from "./component/Lco";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import "./App.css";
@@ -28,6 +30,8 @@ function App() {
           <Route exact path="/etch" component={WeEtch} />
           <Route exact path="/annealing" component={Annealing} />
           <Route exact path="/backcoating" component={BackCoating} />
+          <Route exact path="/pecvd" component={Pecvd} />
+          <Route exact path="/lco" component={Lco} />
         </Switch>
       </BrowserRouter>
     </div>
