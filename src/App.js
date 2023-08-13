@@ -1,5 +1,12 @@
 import Form1 from "./component/form1";
+import Lpdiffusion from "./component/Lpdiffusion";
+import Ldse from "./component/Ldse";
+import WeEtch from "./component/EtchProcess";
+import Annealing from "./component/Annealing";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
 import "./App.css";
+import BackCoating from "./component/BackCoating";
 
 function App() {
   return (
@@ -13,7 +20,16 @@ function App() {
           alt="tata-head"
         />
       </div>
-      <Form1 />
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Form1} />
+          <Route exact path="/lp" component={Lpdiffusion} />
+          <Route exact path="/ldse" component={Ldse} />
+          <Route exact path="/etch" component={WeEtch} />
+          <Route exact path="/annealing" component={Annealing} />
+          <Route exact path="/backcoating" component={BackCoating} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

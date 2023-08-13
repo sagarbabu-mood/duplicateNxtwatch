@@ -1,27 +1,18 @@
-.head1-form1 {
+.head1-form1-annealing {
   color: #486aae;
   font-family: Ubuntu, sans-serif;
   font-size: 25px;
   margin-left: 10px;
 }
-.head1-form2 {
-  color: #486aae;
-  background: -webkit-linear-gradient(#486aae, #b30086);
-  font-family: Ubuntu, sans-serif;
-  font-size: 25px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: start;
-}
-.cont1-form1 {
+.cont1-form1-annealing {
   padding: 20px;
 }
-.label1 {
+.label1-annealing {
   color: #333333;
   font-size: 20px;
   margin: 10px;
 }
-.input1 {
+.input1-annealing {
   border-radius: 10px;
   padding: 12px;
   border: 2px solid #486aae;
@@ -33,7 +24,7 @@
   font-size: 17px;
   margin-right: 40px;
 }
-.input2 {
+.input2-annealing {
   border-radius: 10px;
   padding: 12px;
   border: 2px solid #486aae;
@@ -44,16 +35,16 @@
   color: #595959;
   font-size: 17px;
 }
-.cont2-form1 {
+.cont2-form1-annealing {
   display: flex;
   flex-direction: row;
 
   margin-top: 50px;
 }
-.cont2-inner {
+.cont2-inner-annealing {
   margin-right: 150px;
 }
-.dropdown-form1 {
+.dropdown-form1-annealing {
   border-radius: 10px;
   padding: 12px;
   border: 2px solid #486aae;
@@ -65,21 +56,24 @@
   font-size: 17px;
   width: 245px;
 }
-.cont-shift {
+.cont-tex {
+  margin-left: 20px;
+}
+.cont-shift-annealing {
   margin-top: 40px;
   display: flex;
   flex-direction: row;
 }
-.label2 {
+.label2-annealing {
   color: #333333;
   font-size: 20px;
   margin: 10px;
   margin-left: 75px;
 }
-.cont3-inner {
+.cont3-inner-annealing {
   margin-right: 190px;
 }
-.cont-display {
+.cont-display-annealing {
   border-radius: 10px;
 
   border: 2px solid #486aae;
@@ -96,8 +90,9 @@
   height: 70px;
   background-color: white;
 }
-
-.btn {
+.head-ran {
+}
+.btn-annealing {
   border-radius: 10px;
   padding: 12px;
   border: 2px solid #486aae;
@@ -115,66 +110,38 @@ button:hover {
   color: white;
   color: #595959;
 }
-.line {
+.line-annealing {
   border-top: 1px solid #e6e6e6;
   margin-top: 30px;
 }
-button:active {
-  box-shadow: 0px 3px 0px #486aae, 0px 3px 6px rgba(0, 0, 0, 0.9);
-  position: relative;
-  top: 6px;
-}
-.batchcont2-form1 {
+.batchcont2-form1-annealing {
   display: flex;
   flex-direction: row;
   margin-top: 50px;
 }
-.batchcont2-inner {
+.batchcont2-inner-annealing {
   display: flex;
   flex-direction: row;
-  margin-top: 30px;
-  margin-left: 25px;
+  margin-left: 120px;
 }
-.batchcont2-inner4 {
-  margin-left: 60px;
-  margin-top: 24px;
-}
-.batchcont2-inner3 {
-  margin-left: 45px;
-  margin-top: 24px;
-}
-.batchcont2-inner5 {
-  margin-left: 25px;
-  margin-top: 24px;
-}
-.batchcont2-inner6 {
-  margin-left: 22px;
-  margin-top: 24px;
-}
-.batchcont2-inner2 {
+.batchcont2-inner2-annealing {
   display: flex;
   flex-direction: row;
-  margin-left: 150px;
-  height: 65px;
-  margin-top: 25px;
+  margin-left: 160px;
 }
-.cont-tex {
-  margin-left: 10px;
-}
-.batchcont2-inner3 {
+.batchcont2-inner3-annealing {
   display: flex;
   flex-direction: row;
   margin-top: 20px;
 }
-.batchcont3-inner3 {
+.batchcont3-inner3-annealing {
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
-  margin-left: 30px;
+  margin-top: 70px;
+  margin-left: 50px;
   margin-top: 30px;
 }
-
-.batch-button {
+.batch-button-annealing {
   border-radius: 10px;
   padding: 12px;
   border: 2px solid #486aae;
@@ -188,64 +155,12 @@ button:active {
   font-family: ;
   width: 100px;
 }
-.batchbtn-cont {
+.batchbtn-cont-annealing {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 30px;
 }
-
-input:active {
-  position: relative;
-  border: 2px solid #486aae;
-}
-
-.vl {
-  border-left: 6px solid;
-  border-image: linear-gradient(#486aae, #b30086) 30;
-  height: 400px;
-  position: absolute;
-  left: 45%;
-  margin-left: -3px;
-  margin-top: 1020px;
-  top: 0;
-}
-.batchcont3-inner0 {
-  margin-left: 58px;
-  margin-top: 24px;
-}
-.vl1 {
-  border-left: 6px solid;
-  border-image: linear-gradient(#486aae, #b30086) 30;
-  height: 400px;
-  position: absolute;
-  left: 45%;
-  margin-left: -3px;
-  margin-top: 1500px;
-  top: 0;
-}
-
-.cont-line-spoler {
-  margin-left: 300px;
-}
 .two-row-cont {
-  display: flex;
-  flex-direction: row;
-}
-.two-row-cont1 {
-  display: flex;
-  flex-direction: row;
-  margin-top: 50px;
-}
-.textarea-cont {
-  margin-top: 50px;
-}
-.cont-btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-.btn1 {
-  margin-right: 100px;
-  width: 200px;
+  margin-left: 25px;
 }
