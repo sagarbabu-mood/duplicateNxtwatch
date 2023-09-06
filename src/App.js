@@ -37,7 +37,6 @@ function App() {
           <Route exact path="/backcoating" component={BackCoating} />
           <Route exact path="/pecvd" component={Pecvd} />
           <Route exact path="/main" component={MainPage} />
-
           <Route exact path="/lco" component={Lco} />
 
           <Route component={FileNot} />

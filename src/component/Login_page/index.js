@@ -23,11 +23,7 @@ class LoginForm extends Component {
   onSubmitSuccess = (jwtTkoken) => {
     const { history } = this.props;
 
-    Cookies.set("jwt_token", jwtTkoken, {
-      expires: 30,
-      path: "/",
-    });
-    history.replace("/");
+    history.replace("/lp");
   };
 
   onSubmitFailure = (errorMsg) => {
@@ -91,31 +87,23 @@ class LoginForm extends Component {
 
   render() {
     const { showSubmitError, errorMsg } = this.state;
-    const jwtToken = Cookies.get("jwt_token");
-    if (jwtToken !== undefined) {
-      return <Redirect to="/" />;
-    }
+
     return (
       <div className="login-form-container">
         <img
-          src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
-          className="login-website-logo-mobile-image"
-          alt="website logo"
-        />
-        <img
-          src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-login-img.png"
+          src="https://ecurater.com/wp-content/uploads/2020/10/login1.png"
           className="login-image"
           alt="website login"
         />
         <form className="form-container" onSubmit={this.submitForm}>
           <img
-            src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
+            src="https://www.tatapowersolar.com/wp-content/themes/tpsolar/assets/images/tata-power-solar-logo.jpg"
             className="login-website-logo-desktop-image"
             alt="website logo"
           />
           <div className="input-container">{this.renderUsernameField()}</div>
           <div className="input-container">{this.renderPasswordField()}</div>
-          <button type="submit" className="login-button">
+          <button type="submit" className="btn2-login">
             Login
           </button>
           {showSubmitError && <p className="error-message">*{errorMsg}</p>}
