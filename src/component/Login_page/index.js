@@ -22,7 +22,6 @@ class LoginForm extends Component {
 
   onSubmitSuccess = (jwtTkoken) => {
     const { history } = this.props;
-
     history.replace("/lp");
   };
 
@@ -59,9 +58,10 @@ class LoginForm extends Component {
         <input
           type="password"
           id="password"
-          className="password-input-filed"
+          className="pass-word-input-filed"
           value={password}
           onChange={this.onChangePassword}
+          autoComplete="off"
         />
       </>
     );
@@ -80,6 +80,7 @@ class LoginForm extends Component {
           className="username-input-filed"
           value={username}
           onChange={this.onChangeUsername}
+          autoComplete="off"
         />
       </>
     );

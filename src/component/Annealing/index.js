@@ -52,7 +52,7 @@ const Annealing = () => (
             </div>
           </div>
         </form>
-        <hr className="line" />
+        <hr className="line-annealing" />
         <div className="cont-tex">
           <h1 className="head1-form1">Annealing</h1>
           <div className="two-row-cont">

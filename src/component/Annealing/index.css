@@ -112,8 +112,14 @@ button:hover {
 }
 .line-annealing {
   border-top: 1px solid #e6e6e6;
-  margin-top: 30px;
+  margin-top: 10px;
 }
+
+.line-anneal {
+  border-top: 1px solid #e6e6e6;
+  margin-top: 100px;
+}
+
 .batchcont2-form1-annealing {
   display: flex;
   flex-direction: row;
