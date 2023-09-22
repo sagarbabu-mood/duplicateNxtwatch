@@ -1,37 +1,118 @@
-import Form1 from "./component/form1";
-import Lpdiffusion from "./component/Lpdiffusion";
-import Lldse from "./component/Ldse";
-import WeEtch from "./component/EtchProcess";
-import Annealing from "./component/Annealing";
-import Pecvd from "./component/Pecvd";
-import Lco from "./component/Lco";
-import MainPage from "./component/main-page";
-import LoginForm from "./component/Login_page";
-import FileNot from "./component/FileNotFound";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import "./App.css";
-import BackCoating from "./component/BackCoating";
+import {Component} from 'react'
+import {Switch, Route, Redirect} from 'react-router-dom'
+import LoginForm from './components/LoginForm'
+import ProtectedRoute from './components/ProtectedRoute'
+import Home from './components/Home'
+import Trending from './components/Trending'
+import Gaming from './components/Gaming'
+import SavedVideos from './components/SavedVideos'
+import VideoItemDetails from './components/VideoItemDetails'
+import NotFound from './components/NotFound'
+import NxtWatchContext from './context/NxtWatchContext'
+import './App.css'
 
-function App() {
-  return (
-    <BrowserRouter>
-      <Switch>
-        <Route exact path="/" component={MainPage} />
-        <Route exact path="/batchtex" component={Form1} />
-        <Route exact path="/lp" component={Lpdiffusion} />
-        <Route exact path="/login" component={LoginForm} />
-        <Route exact path="/ldse" component={Lldse} />
-        <Route exact path="/etch" component={WeEtch} />
-        <Route exact path="/annealing" component={Annealing} />
-        <Route exact path="/backcoating" component={BackCoating} />
-        <Route exact path="/pecvd" component={Pecvd} />
-        <Route exact path="/main" component={MainPage} />
-        <Route exact path="/lco" component={Lco} />
-        <Route exact path="testing" element={<Form1 />} />
-        <Route component={FileNot} />
-      </Switch>
-    </BrowserRouter>
-  );
+// Replace your code here
+class App extends Component {
+  state = {
+    isDarkTheme: false,
+    likedVideos: [],
+    dislikedVideos: [],
+    savedVideos: [],
+  }
+
+  changeTheme = () => {
+    this.setState(prevState => ({isDarkTheme: !prevState.isDarkTheme}))
+  }
+
+  updateLikedVideos = videoDetails => {
+    const {likedVideos, dislikedVideos} = this.state
+    const video = likedVideos.find(each => each.id === videoDetails.id)
+    if (video) {
+      const filteredLikedVideos = likedVideos.filter(
+        each => each.id !== videoDetails.id,
+      )
+      this.setState({
+        likedVideos: filteredLikedVideos,
+      })
+    } else {
+      const filteredDislikedVideos = dislikedVideos.filter(
+        each => each.id !== videoDetails.id,
+      )
+      this.setState({
+        likedVideos: [...likedVideos, videoDetails],
+        dislikedVideos: filteredDislikedVideos,
+      })
+    }
+  }
+
+  updateDislikedVideos = videoDetails => {
+    const {dislikedVideos, likedVideos} = this.state
+    const video = dislikedVideos.find(each => each.id === videoDetails.id)
+    if (video) {
+      const filteredDislikedVideos = dislikedVideos.filter(
+        each => each.id !== videoDetails.id,
+      )
+      this.setState({
+        dislikedVideos: filteredDislikedVideos,
+      })
+    } else {
+      const filteredLikedVideos = likedVideos.filter(
+        each => each.id !== videoDetails.id,
+      )
+      this.setState({
+        dislikedVideos: [...dislikedVideos, videoDetails],
+        likedVideos: filteredLikedVideos,
+      })
+    }
+  }
+
+  updateSavedVideos = videoDetails => {
+    const {savedVideos} = this.state
+    const video = savedVideos.find(each => each.id === videoDetails.id)
+    if (video) {
+      const filteredSavedVideos = savedVideos.filter(
+        each => each.id !== videoDetails.id,
+      )
+      this.setState({savedVideos: filteredSavedVideos})
+    } else {
+      this.setState({
+        savedVideos: [...savedVideos, videoDetails],
+      })
+    }
+  }
+
+  render() {
+    const {isDarkTheme, likedVideos, dislikedVideos, savedVideos} = this.state
+    return (
+      <NxtWatchContext.Provider
+        value={{
+          isDarkTheme,
+          changeTheme: this.changeTheme,
+          likedVideos,
+          updateLikedVideos: this.updateLikedVideos,
+          dislikedVideos,
+          updateDislikedVideos: this.updateDislikedVideos,
+          savedVideos,
+          updateSavedVideos: this.updateSavedVideos,
+        }}
+      >
+        <Switch>
+          <Route exact path="/login" component={LoginForm} />
+          <ProtectedRoute exact path="/" component={Home} />
+          <ProtectedRoute exact path="/trending" component={Trending} />
+          <ProtectedRoute exact path="/gaming" component={Gaming} />
+          <ProtectedRoute exact path="/saved-videos" component={SavedVideos} />
+          <ProtectedRoute
+            exact
+            path="/videos/:id"
+            component={VideoItemDetails}
+          />
+          <Route exact path="/not-found" component={NotFound} />
+          <Redirect to="/not-found" />
+        </Switch>
+      </NxtWatchContext.Provider>
+    )
+  }
 }
 
-export default App;
+export default App
